@@ -1,0 +1,11 @@
+filebeat:
+  prospectors:
+    -
+      paths:
+        - "/var/log/nginx/access.log"
+      document_type: nginx-access
+output:
+  redis:
+    hosts: ["redis"]
+    port: 6379
+    key: "logstash"

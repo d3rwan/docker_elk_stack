@@ -1,0 +1,7 @@
+server:
+  port: 5601
+  host: 0.0.0.0
+  basePath: ""
+
+elasticsearch:
+  url: "http://elasticsearch:9200"
