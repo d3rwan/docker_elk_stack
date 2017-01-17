@@ -12,7 +12,7 @@ ELK stack from scratch, with Docker
 ## Run the webapp to monitor
 ```
   docker build ./webapp -t dockerelkstack_webapp
-  docker run --network dockerelkstack_logging --link redis:redis -p 80:80 -d --name webapp dockerelkstack_webap
+  docker run --network dockerelkstack_logging --link redis:redis -p 80:80 -d --name webapp dockerelkstack_webapp
 ```
 Then navigate on the site (port 80, source: https://github.com/sbilly/joli-admin)
 

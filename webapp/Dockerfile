@@ -2,8 +2,8 @@ FROM nginx
 
 RUN apt-get update \
 	&& apt-get install curl sudo git -y \
-	&& curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-5.0.0-beta1-amd64.deb \
-	&& sudo dpkg -i filebeat-5.0.0-beta1-amd64.deb \
+	&& curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-5.1.2-amd64.deb \
+	&& sudo dpkg -i filebeat-5.1.2-amd64.deb \
 	&& rm -rf /var/log/nginx/*.log \
 	&& touch /var/log/nginx/access.log \
 	&& touch /var/log/nginx/error.log \
